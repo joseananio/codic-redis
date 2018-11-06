@@ -1,0 +1,6 @@
+// var test = require("./test");
+import test from "./test";
+// var moment = require("moment");
+// var t = new moment();
+// console.log(t.startOf("year"));
+test();

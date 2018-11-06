@@ -1,0 +1,71 @@
+{
+  "name": "codic-redis",
+  "version": "1.0.0",
+  "description": "Redis database driver for codic job scheduling",
+  "main": "dist/cjs/bundle.js",
+  "module": "dist/es/bundle.js",
+  "scripts": {
+    "build:es": "NODE_ENV=es rollup -c",
+    "build:cjs": "NODE_ENV=cjs rollup -c",
+    "build:umd": "NODE_ENV=umd rollup -c",
+    "build": "npm run build:es && npm run build:cjs",
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseananio/codic-redis.git"
+  },
+  "keywords": [
+    "codic",
+    "job",
+    "task",
+    "scheduler",
+    "jobs",
+    "job",
+    "runner",
+    "cron"
+  ],
+  "author": "joseananio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joseananio/codic-redis/issues"
+  },
+  "homepage": "https://github.com/joseananio/codic-redis#readme",
+  "dependencies": {
+    "ioredis": "^4.0.0"
+  },
+  "peerDependencies": {
+    "codic": "^1.0.0-beta.2"
+  },
+  "devDependencies": {
+    "@ava/babel-preset-stage-4": "^2.0.0",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-external-helpers": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "ava": "^0.25.0",
+    "rollup": "^0.67.0",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-filesize": "^5.0.1",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-node-resolve": "^3.4.0"
+  },
+  "ava": {
+    "files": [
+      "tests/**/*.js",
+      "!node_modules/**/*.js"
+    ],
+    "sources": [
+      "**/*.{js,jsx,ts}",
+      "!dist/**/*"
+    ],
+    "require": [
+      "@babel/register"
+    ],
+    "cache": false,
+    "failFast": false,
+    "verbose": true,
+    "tap": true
+  }
+}
