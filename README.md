@@ -1,6 +1,6 @@
 # Codic Redis
 ### A redis database driver for Codic task schedular. Use codic-redis as the driver for scheduling jobs with Codic.
-New to Codic ? Codic allows you to create javascript jobs for any database you are using. No need to install a separate database for managing jobs.
+New to Codic? Codic allows you to create javascript jobs for any database you are using. No need to install a separate database for managing jobs.
 [Read more here](https://github.com/joseananio/codic.git "Codic Homepage")
 
 ## Installation

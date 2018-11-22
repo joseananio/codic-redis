@@ -1,4 +1,4 @@
-const presets = ["@ava/stage-4"];
+const presets = ["@babel/env"];
 const plugins = [];
 
 module.exports = { presets, plugins };

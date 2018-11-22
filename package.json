@@ -1,6 +1,6 @@
 {
   "name": "codic-redis",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Redis database driver for codic job scheduling",
   "main": "dist/cjs/bundle.js",
   "module": "dist/es/bundle.js",
@@ -35,13 +35,14 @@
     "ioredis": "^4.0.0"
   },
   "peerDependencies": {
-    "codic": "^1.0.0-beta.2"
+    "codic": "^1.0.1"
   },
   "devDependencies": {
-    "@ava/babel-preset-stage-4": "^2.0.0",
+    "codic": "^1.0.1",
     "@babel/core": "^7.1.2",
     "@babel/plugin-external-helpers": "^7.0.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
     "@babel/register": "^7.0.0",
     "ava": "^0.25.0",
     "rollup": "^0.67.0",
