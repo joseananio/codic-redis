@@ -1,6 +1,6 @@
 {
   "name": "codic-redis",
-  "version": "2.0.0-beta.1",
+  "version": "2.0.0",
   "description": "Redis database driver for codic job scheduling",
   "main": "dist/cjs/bundle.js",
   "module": "dist/es/bundle.js",
